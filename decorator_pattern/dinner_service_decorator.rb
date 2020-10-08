@@ -1,0 +1,11 @@
+class DinnerServiceDecorator
+  attr_accessor :cost
+
+  def initialize(room_type)
+    @room_type = room_type
+  end
+
+  def cost
+    @room_type.cost += 2000
+  end
+end
